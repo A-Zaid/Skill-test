@@ -23,6 +23,12 @@ p{
 .icon-blue {
     color:#5474FD;
 }
+.icon-red {
+    color:#FF6363;
+}
+.icon-light-blue {
+    color: #00A2FF
+}
 .main__section1 {
     display: flex;
     flex-direction: column;
@@ -56,13 +62,6 @@ p{
         font-family: Josefin Sans;
         font-style: normal;
         font-weight: normal;
-    }
-    &__howIW{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 30vh;
-        background-color: #333333 ;
     }
     &__wrapper {
         display: flex;
@@ -98,6 +97,30 @@ p{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+    }
+    &__howIW{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 30vh;
+        background-color: #333333 ;
+        justify-content: center;
+    }
+    &__element {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 90%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &-step {
+       display: flex;
+       flex-direction: column; 
+       justify-content: space-evenly;
+       align-items: center;
+       row-gap: 20px;
     }
 }
 .main__section2 {
@@ -267,7 +290,7 @@ p{
 }
 @media screen and (max-width: 540px) {
     h2 {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 7px;
     }
     p{
@@ -297,7 +320,7 @@ p{
 }
 @media screen and (max-width: 320px) {
     h2 {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 7px;
     }
     p{

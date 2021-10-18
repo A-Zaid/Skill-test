@@ -408,6 +408,14 @@ p {
   color: #5474FD;
 }
 
+.icon-red {
+  color: #FF6363;
+}
+
+.icon-light-blue {
+  color: #00A2FF;
+}
+
 .main__section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,19 +464,6 @@ p {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
-}
-.main__section1__howIW {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 30vh;
-  background-color: #333333;
 }
 .main__section1__wrapper {
   display: -webkit-box;
@@ -538,6 +533,57 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+.main__section1__howIW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 30vh;
+  background-color: #333333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main__section1__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  height: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.main__section1-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 20px;
 }
 
 .main__section2 {
@@ -764,7 +810,7 @@ p {
 }
 @media screen and (max-width: 540px) {
   h2 {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 7px;
   }
 
@@ -793,7 +839,7 @@ p {
 }
 @media screen and (max-width: 320px) {
   h2 {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 7px;
   }
 
