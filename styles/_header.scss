@@ -1,3 +1,29 @@
+.nav {
+    width: 45%;
+    display: flex;
+    align-self: center;  
+    justify-content: flex-end;
+    column-gap: 5%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.nav a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: left;
+    display: block;
+}
+.nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.nav .icon {
+    display: none;
+}
+
 input:focus {
     color: #3d1515;
     background: #d4c1c1;
@@ -107,20 +133,6 @@ input:focus {
             text-transform: uppercase;
             color: #FFFFFF;
         }
-        nav {
-            width: 45%;
-            display: flex;
-            align-self: center;  
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        &__links{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 100%;
-        }
         &__text{
             font-family: Aleo;
             text-transform: uppercase;
@@ -128,7 +140,7 @@ input:focus {
         }
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .header {
          &__title {
             row-gap: 9px;
@@ -144,7 +156,7 @@ input:focus {
             letter-spacing: 6px;
         }
         &__txt{
-            font-size: 10px;
+            font-size: 8px;
             line-height: 20px;
             letter-spacing: 2px; 
         }
@@ -162,6 +174,7 @@ input:focus {
         }
     }
 }
+
 @media screen and (max-width: 800px) {
     .header {
          &__title {
@@ -178,7 +191,7 @@ input:focus {
             letter-spacing: 4px;
         }
         &__txt{
-            font-size: 7px;
+            font-size: 6px;
             line-height: 14px;
             letter-spacing: 1.8px; 
         }
@@ -207,8 +220,8 @@ input:focus {
             letter-spacing: 2px;
         }
         &__txt{
-            font-size: 6px;
-            line-height: 13px;
+            font-size: 5px;
+            line-height: 11px;
             letter-spacing: 1.2px; 
         }
         &__menu{
@@ -237,7 +250,7 @@ input:focus {
        }
        &__txt{
            font-size: 5px;
-           line-height: 12px;
+           line-height: 10px;
            letter-spacing: 1px; 
        }
        &__menu{
@@ -249,3 +262,39 @@ input:focus {
        }
    }
 }
+@media screen and (max-width: 500px) {
+    .nav a {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .nav.responsive {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 100%;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: #FFFFFF;
+    }
+    .nav.responsive  a:not(:first-child) {
+      float: none;
+      display: block;
+      text-align: left;
+      color: #242635;
+      width: 100%; 
+    }
+    .nav.responsive .icon {
+        position: absolute;  
+        left: 0;
+        top: 0;
+       }
+    .nav.responsive a:not(:first-child):hover {
+        background-color: #6d6b6949;
+      }
+  }
