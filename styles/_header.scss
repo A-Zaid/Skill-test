@@ -1,3 +1,7 @@
+input:focus {
+    color: #3d1515;
+    background: #d4c1c1;
+}
 .header {
     max-width: 1770px;
     font-family: Josefin Sans;
@@ -67,7 +71,7 @@
     &__search-form-btn {
         background: #5474FD;
         border: 2px solid #FFFFFF;
-        width: 25%;
+        width: 30%;
         justify-content: center;
         box-sizing: border-box;
         align-items: center;
@@ -123,4 +127,125 @@
             text-decoration: none;
         }
     }
+}
+@media screen and (max-width: 1200px) {
+    .header {
+         &__title {
+            row-gap: 9px;
+        }
+        &__title h1 {
+            font-size: 40px;
+            line-height: 20px;
+            letter-spacing: 4px;
+        }
+        &__title h2 {
+            font-size: 26px;
+            line-height: 16px;
+            letter-spacing: 6px;
+        }
+        &__txt{
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 2px; 
+        }
+        &__menu{
+            &__logo-txt{
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 2px;
+            }
+            &__text{
+                font-family: Aleo;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .header {
+         &__title {
+            row-gap: 9px;
+        }
+        &__title h1 {
+            font-size: 38px;
+            line-height: 18px;
+            letter-spacing: 2px;
+        }
+        &__title h2 {
+            font-size: 24px;
+            line-height: 14px;
+            letter-spacing: 4px;
+        }
+        &__txt{
+            font-size: 7px;
+            line-height: 14px;
+            letter-spacing: 1.8px; 
+        }
+        &__menu{
+            &__logo-txt{
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 660px) {
+    .header {
+         &__title {
+            row-gap: 8px;
+        }
+        &__title h1 {
+            font-size: 28px;
+            line-height: 15px;
+            letter-spacing: 1.6px;
+        }
+        &__title h2 {
+            font-size: 20px;
+            line-height: 10px;
+            letter-spacing: 2px;
+        }
+        &__txt{
+            font-size: 6px;
+            line-height: 13px;
+            letter-spacing: 1.2px; 
+        }
+        &__menu{
+            &__logo-txt{
+                font-size: 15px;
+                line-height:16px;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .header {
+        &__title {
+           row-gap: 7px;
+       }
+       &__title h1 {
+           font-size: 26px;
+           line-height: 14px;
+           letter-spacing: 1.3px;
+       }
+       &__title h2 {
+           font-size: 18px;
+           line-height: 8px;
+           letter-spacing: 1.3px;
+       }
+       &__txt{
+           font-size: 5px;
+           line-height: 12px;
+           letter-spacing: 1px; 
+       }
+       &__menu{
+           &__logo-txt{
+               font-size: 14px;
+               line-height:15px;
+               letter-spacing: 1.2px;
+           }
+       }
+   }
 }
