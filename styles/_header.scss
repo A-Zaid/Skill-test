@@ -1,0 +1,126 @@
+.header {
+    max-width: 1770px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    &__welcome-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; 
+        height: 85vh;
+        width: 100%;
+        background-image: url(../images/background1.png);
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        justify-content: flex-end;
+        row-gap: 10px;
+    }
+    &__title h1 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__title h2 {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 6.82px;
+        color: #FFFFFF;
+    }
+    &__txt{
+        font-size: 14px;
+        line-height: 26px;
+        display: flex;
+        text-align: center;
+        letter-spacing: 2.8px; 
+        color: #FFFFFF; 
+    }
+    &__form {
+        width: 100%;
+        display: flex;
+    }
+    &__search-form{
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        height: 10%;
+    }
+    &__search-form-input-field{
+        color: #999999;
+        width: 75%;
+        background: #FFFFFF;
+        border-color: #FFFFFF;
+    }
+    &__search-form-btn {
+        background: #5474FD;
+        border: 2px solid #FFFFFF;
+        width: 25%;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    &__scrolldown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .arrow-style {
+            color: white;
+        }
+    }
+    &__menu{
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #5474FD;
+        &__logo{
+            width: 20%;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__logo-txt{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 26px;
+            align-items: center;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        nav {
+            width: 45%;
+            display: flex;
+            align-self: center;  
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__links{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+        &__text{
+            font-family: Aleo;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
