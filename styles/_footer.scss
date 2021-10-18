@@ -1,0 +1,41 @@
+h6{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    color: #FFFFFF;
+}
+.footer {
+    max-width: 1770px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-color: #232323;
+    &__container {
+        height: 50%;
+        width: 11%;
+    }
+    &__element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; 
+        height: 100%;
+    }
+    &__icon-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        width: 100%;
+    }
+    
+}
