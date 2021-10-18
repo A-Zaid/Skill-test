@@ -200,12 +200,35 @@
   text-decoration: none;
 }
 
+body {
+  font-style: normal;
+  font-weight: normal;
+  color: #E8E8E8;
+  font-family: Aleo;
+}
+
 button:hover {
   background: #899cf1;
 }
 
 a:hover {
   color: #0828b4;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 26px;
+}
+
+p {
+  font-family: Josefin Sans;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+}
+
+.icon-blue {
+  color: #5474FD;
 }
 
 .main__section1 {
@@ -220,20 +243,6 @@ a:hover {
       flex-wrap: wrap;
   width: 100%;
   max-width: 1770px;
-  font-style: normal;
-  font-weight: normal;
-  color: #E8E8E8;
-  font-family: Aleo;
-}
-.main__section1 h2 {
-  font-size: 36px;
-  line-height: 26px;
-}
-.main__section1 p {
-  font-family: Josefin Sans;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 1.6px;
 }
 .main__section1__section1__img {
   max-width: 350px;
@@ -394,6 +403,62 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main__section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url(../images/background5.png);
+  height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main__section4__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 80%;
+  width: 70%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__section4__card__aligner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* width: 50%;
+  height: 60%; */
 }
 
 .main__section__card__aligner {
