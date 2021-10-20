@@ -1,11 +1,14 @@
 .nav {
-    width: 45%;
+    width: 60%;
     display: flex;
     align-self: center;  
     justify-content: flex-end;
-    column-gap: 5%;
+    column-gap: 3%;
     flex-wrap: wrap;
     overflow: hidden;
+}
+a {
+    text-decoration: none;
 }
 .nav a {
     display: flex;
@@ -44,8 +47,10 @@ input:focus {
         align-items: center;
         justify-content: space-evenly; 
         height: 85vh;
+        min-height: 300px;
         width: 100%;
         background-image: url(../images/background1.png);
+        background-repeat: no-repeat;
     }
     &__title {
         display: flex;
@@ -81,12 +86,14 @@ input:focus {
     &__form {
         width: 100%;
         display: flex;
+        flex-direction: row;
     }
     &__search-form{
         display: flex;
         flex-direction: row;
         width: 35%;
         height: 10%;
+        min-height: 30px;
     }
     &__search-form-input-field{
         color: #999999;
@@ -112,16 +119,18 @@ input:focus {
     }
     &__menu{
         height: 15vh;
+        min-height: 50px;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         background-color: #5474FD;
+
         &__logo{
-            width: 20%;
+            width: 30%;
             display: flex;
             align-self: center;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
         }
         &__logo-txt{
@@ -132,6 +141,7 @@ input:focus {
             letter-spacing: 2.4px;
             text-transform: uppercase;
             color: #FFFFFF;
+            text-decoration: none;
         }
         &__text{
             font-family: Aleo;
@@ -156,8 +166,8 @@ input:focus {
             letter-spacing: 6px;
         }
         &__txt{
-            font-size: 8px;
-            line-height: 20px;
+            font-size: 12px;
+            line-height: 14px;
             letter-spacing: 2px; 
         }
         &__menu{
@@ -171,6 +181,10 @@ input:focus {
                 text-transform: uppercase;
                 text-decoration: none;
             }
+        }
+        &__search-form{
+            width: 45%;
+            height: 10%;
         }
     }
 }
@@ -191,8 +205,8 @@ input:focus {
             letter-spacing: 4px;
         }
         &__txt{
-            font-size: 6px;
-            line-height: 14px;
+            font-size: 10px;
+            line-height: 10px;
             letter-spacing: 1.8px; 
         }
         &__menu{
@@ -201,6 +215,9 @@ input:focus {
                 line-height: 20px;
                 letter-spacing: 1.8px;
             }
+        }
+        &__search-form{
+            width: 60%;
         }
     }
 }
@@ -220,9 +237,7 @@ input:focus {
             letter-spacing: 2px;
         }
         &__txt{
-            font-size: 5px;
-            line-height: 11px;
-            letter-spacing: 1.2px; 
+            letter-spacing: 1px; 
         }
         &__menu{
             &__logo-txt{
@@ -230,6 +245,12 @@ input:focus {
                 line-height:16px;
                 letter-spacing: 1.2px;
             }
+        }
+        &__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -248,11 +269,6 @@ input:focus {
            line-height: 8px;
            letter-spacing: 1.3px;
        }
-       &__txt{
-           font-size: 5px;
-           line-height: 10px;
-           letter-spacing: 1px; 
-       }
        &__menu{
            &__logo-txt{
                font-size: 14px;
@@ -260,9 +276,16 @@ input:focus {
                letter-spacing: 1.2px;
            }
        }
+       &__search-form-btn {
+        width: 40%;
+    }
+        &__search-form{
+            width: 90%;
+            height: 9%;
+        }
    }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .nav a {display: none;}
     .nav a.icon {
       float: right;
@@ -270,7 +293,7 @@ input:focus {
     }
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .nav.responsive {
         position: relative;
         display: flex;
@@ -280,7 +303,7 @@ input:focus {
         height: 100%;
         flex-wrap: wrap;
         overflow: hidden;
-        background-color: #FFFFFF;
+        background-color: #acaaaa;
     }
     .nav.responsive  a:not(:first-child) {
       float: none;

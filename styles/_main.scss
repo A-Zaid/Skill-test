@@ -8,7 +8,7 @@ button:hover {
     background: #899cf1; 
 }
 a:hover {
-    color: #0828b4;
+    color: #1732ad;
 }
 h2 {
     font-size: 36px;
@@ -20,8 +20,12 @@ p{
     line-height: 26px;
     letter-spacing: 1.6px;
 }
-.icon-blue {
-    color:#5474FD;
+i {
+    color: #FFFFFF;
+}
+
+.icon-blue, i:hover {
+    color:#162c8d;
 }
 .icon-red {
     color:#FF6363;
@@ -49,16 +53,15 @@ p{
         max-width: 47%;
         height: 12%;
         border: none;
-        :hover {
-            background: #899cf1; 
-        }
     }
     &__whyCU{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         background-image: url(../images/background2.png);
+        background-repeat: no-repeat;
         height: 80vh;
+        min-height: 380px; 
         font-family: Josefin Sans;
         font-style: normal;
         font-weight: normal;
@@ -75,7 +78,7 @@ p{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 70%;
+        width: 85%;
         height: 80%;
         justify-content: space-evenly;
     }
@@ -103,6 +106,7 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         height: 30vh;
+        min-height: 130px;
         background-color: #333333 ;
         justify-content: center;
     }
@@ -122,13 +126,22 @@ p{
        align-items: center;
        row-gap: 20px;
     }
+    .arch-container{
+        display: flex;
+       flex-direction: row; 
+       justify-content: space-evenly;
+       align-items: center;
+       width: 100%;
+    }
 }
 .main__section2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-image: url(../images/background3.png);
+    background-repeat: no-repeat;
     height: 80vh;  
+    min-height: 380px; 
     align-items: center;
     justify-content: center;
     
@@ -138,7 +151,9 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     background-image: url(../images/background4.png);
+    background-repeat: no-repeat;
     height: 80vh;  
+    min-height: 380px; 
     align-items: center;
     justify-content: center;
 }
@@ -147,7 +162,9 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     background-image: url(../images/background5.png);
-    height: 80vh;  
+    background-repeat: no-repeat;
+    height: 80vh;
+    min-height: 420px;  
     align-items: center;
     justify-content: center;
     &__container{
@@ -184,8 +201,7 @@ p{
         line-height: 16px;
     }
     p{
-        font-family: Josefin Sans;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 20px;
         letter-spacing: 1px;
     }
@@ -194,11 +210,9 @@ p{
             width: 300px;
         }
         &__btn {
-            font-size: 10px;
+            font-size: 12px;
             line-height: 20px;
-            align-items: center;
             letter-spacing: 1px;
-            text-transform: uppercase;
         }}
         .main__section4 {
             &__img {
@@ -212,9 +226,8 @@ p{
         line-height: 14px;
     }
     p{
-        font-family: Josefin Sans;
-        font-size: 9px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 16px;
         letter-spacing: 1px;
     }
     .main__section1 {
@@ -222,50 +235,43 @@ p{
             width: 300px;
         }
         &__btn {
-            font-size: 9px;
-            line-height: 18px;
+            font-size: 12px;
+            line-height: 16px;
             letter-spacing: 1px;
         }}
         .main__section4 {
             &__img {
-                width: 300px;
+                width: 280px;
+            }
+        }
+        .main__section4 {
+            height: 80vh;  
+            &__container{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 90%;
+                width: 90%;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            &__card__aligner{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                row-gap: 10px;
             }
         }
 }
 @media screen and (max-width: 800px) {
     h2 {
-        font-size: 20px;
-        line-height: 10px;
-    }
-    p{
-        font-family: Josefin Sans;
-        font-size: 7px;
-        line-height: 15px;
-        letter-spacing: 0.5px;
-    }
-    .main__section1 {
-        &__img {
-            width: 270px;
-        }
-        &__btn {
-            font-size: 7px;
-            line-height: 15px;
-            letter-spacing: 0.5px;
-        }}
-        .main__section4 {
-            &__img {
-                width: 270px;
-            }
-        }
-}
-@media screen and (max-width: 750px) {
-    h2 {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 7px;
     }
     p{
-        font-size: 7px;
-        line-height: 8px;
+        font-size: 12px;
+        line-height: 14px;
         letter-spacing: 0.2px;
     }
     .main__section1 {
@@ -273,78 +279,35 @@ p{
             width: 210px;
         }
         &__btn {
-            font-size: 4px;
-            line-height: 10px;
+            font-size: 12px;
+            line-height: 14px;
             letter-spacing: 0.2px;
+            min-width: 80px;
         }}
-        .main__section4 {
-            &__img {
-                width: 230px;
-            }
-        }
-        .main__section4 {
-            &__container{
-                width: 80%;
-        }
-    }
+}
+@media screen and (max-width: 700px) {
+
 }
 @media screen and (max-width: 540px) {
-    h2 {
-        font-size: 13px;
-        line-height: 7px;
-    }
-    p{
-        font-size: 7px;
-        line-height: 8px;
-        letter-spacing: 0.2px;
-    }
     .main__section1 {
         &__img {
             width: 120px;
         }
         &__btn {
-            font-size: 4px;
-            line-height: 7px;
+            font-size: 10px;
+            line-height: 12px;
             letter-spacing: 0.2px;
         }}
-        .main__section4 {
-            &__img {
-                width: 130px;
-            }
-        }
-        .main__section4 {
-            &__container{
-                width: 83%;
+    .main__section4 {
+        &__img {
+            width: 260px;
         }
     }
 }
 @media screen and (max-width: 320px) {
-    h2 {
-        font-size: 13px;
-        line-height: 7px;
-    }
-    p{
-        font-size: 7px;
-        line-height: 8px;
-        letter-spacing: 0.2px;
-    }
     .main__section1 {
         &__img {
             width: 90px;
-        }
-        &__btn {
-            font-size: 4px;
-            line-height: 7px;
-            letter-spacing: 0.2px;
-        }}
-        .main__section4 {
-            &__img {
-                width: 110px;
-            }
-        }
-        .main__section4 {
-            &__container{
-                width: 83%;
         }
     }
 }
